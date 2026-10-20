@@ -16,15 +16,22 @@ const App = () => {
 
   return (
     <div>
-      <h1>Products</h1>
+
+        <h1>Products</h1>
+
+      <div className="flex justify-center flex-wrap gap-10">
 
       {data.map((elem) => (
-        <div key={elem?.id}>
+        <div className="w-100 p-5 border" key={elem?.id}>
           <p>{elem?.id}</p>
           <h1>{elem?.title}</h1>
           <p>{elem?.price}</p>
+          <p>{elem?.description}</p>
+          <p>{elem?.category}</p>
+          
         </div>
       ))}
+      </div>
     </div>
   );
 };

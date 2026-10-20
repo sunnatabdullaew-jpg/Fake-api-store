@@ -1,26 +1,11 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+padding: 10px;
+background: #1a1745;
+background: radial-gradient(circle, rgba(26, 23, 69, 1) 23%, rgba(1, 73, 110, 1) 59%, rgba(9, 9, 121, 1) 82%);
+color: aliceblue;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
 }
